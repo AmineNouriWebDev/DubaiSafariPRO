@@ -1,40 +1,19 @@
-import DubaiLogo from "../../images/logo.png";
+import { useState } from "react";
+
 import "./header.css";
+import Navbar from "./Navbar";
+import Logo from "./Logo";
 
 const Header = () =>{
+    const [toggle,setToggle] = useState(false);
+
     return (
         <header className="header">
-            <div className="logo">
-                <img src={DubaiLogo} alt="dubai-icon" className="logo-img"/>
-                <div className="logo-text">
-                    <b>DUBAI</b>
-                    <b>DESERT</b>
-                    <b>SAFARI</b>
-
-                </div>
+            <Logo />
+            <Navbar toggle={toggle} setToggle={setToggle} />
+            <div onClick={()=>setToggle(prev => !prev)} className="header-menu">
+                {toggle ? <i className="bi bi-x-lg"></i> : <i className="bi bi-list"></i>}
             </div>
-            <nav className="navbar">
-                <ul className="navbar-links">
-                    <li className="navbar-link">
-                    <i className="bi bi-house-fill"></i>
-                        Home
-                    </li>
-                    <li className="navbar-link">
-                    <i className="bi bi-bank2"></i>
-                        About
-                    </li>
-                    <li className="navbar-link">
-                    <i className="bi bi-arrow-right-square-fill"></i>
-                        Login
-                    </li>
-                    <li className="navbar-link">
-                    <i className="bi bi-person-plus-fill"></i>
-                        Register
-                    </li>
-
-                </ul>
-            </nav>
-
         </header>
     );
 }

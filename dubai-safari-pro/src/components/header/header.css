@@ -5,6 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: relative;
+    padding: 0 30px;
 }
 
 /* logo */
@@ -43,4 +45,38 @@
 }
 .navbar-link i{
     margin-right: 4px;
+}
+/* header menu */
+.header-menu{
+    font-size:40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Media Queries */
+@media (max-width:720px){
+    .header{
+        justify-content: space-between;
+    }
+    .header-menu{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: all 1s ease;
+    }
+        .navbar-links{
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding-left: 50px;
+        }
+        .navbar-link{
+            margin: 15px 0;
+        }
 }
