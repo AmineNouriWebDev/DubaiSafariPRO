@@ -56,7 +56,7 @@
     color: gray;
 }
 .tour-item-price strong{
-    color: red;
+    color: var(--orange-color);
     font-size: 21px;
     font-weight: bold;
 }
