@@ -3,6 +3,7 @@ import './App.css';
 import Banner from './components/banner/Banner';
 import Header from './components/header/Header';
 import HeroHeader from './components/hero-header/HeroHeader';
+import NewsLetter from './components/news-letter/NewsLetter';
 import Pagination from './components/pagination/Pagination';
 import Services from './components/services/Services';
 import SortInput from './components/sort-input/SortInput';
@@ -35,6 +36,7 @@ function App() {
       <TourList toursList={orderedTourList} />
       <Pagination pages = {pages} currentPage = {currentPage} setCurrentPage = {setCurrentPage}/>
       <Banner />
+      <NewsLetter />
     </div>
   );
 }
