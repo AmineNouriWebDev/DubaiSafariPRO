@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import Banner from './components/banner/Banner';
 import Header from './components/header/Header';
 import HeroHeader from './components/hero-header/HeroHeader';
 import Pagination from './components/pagination/Pagination';
@@ -33,6 +34,7 @@ function App() {
       <SortInput setSortItem={setSortItem} sortItem={sortItem} toursLength={toursList.length}/>
       <TourList toursList={orderedTourList} />
       <Pagination pages = {pages} currentPage = {currentPage} setCurrentPage = {setCurrentPage}/>
+      <Banner />
     </div>
   );
 }

@@ -34,7 +34,7 @@
     font-size: 21px;
 }
 .search-box-btn{
-    background-color: blue;
+    background-color: var(--orange-color);
     font-size: 17px;
     font-weight: bold;
     cursor: pointer;
