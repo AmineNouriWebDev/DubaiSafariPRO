@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Rating from "./Rating";
 const TourItem = ({item})=>{
     return (<div className="tour-item">
@@ -13,9 +14,9 @@ const TourItem = ({item})=>{
     <div className="tour-item-price">
         <strong>From ${item.priceFrom} </strong>per person
     </div>
-    <button className="tour-item-link">
+    <Link to={`/tour/${item.id}`} className="tour-item-link">
         See More
-    </button>
+    </Link>
     </div>
 </div>);
 }
