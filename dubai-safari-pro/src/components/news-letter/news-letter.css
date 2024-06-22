@@ -1,6 +1,7 @@
 .news-letter{
     padding: 40px;
     margin: 20px 0;
+    
 }
 .news-letter-container{
     width: 100%;
@@ -9,6 +10,7 @@
     justify-content: space-between;
     height: 500px;
     background-color:rgba(253, 103, 58, 1);
+    border-radius: 17px;
 }
 .news-letter-image-wrapper{
     width: 50%;

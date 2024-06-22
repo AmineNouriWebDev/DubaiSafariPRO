@@ -316,5 +316,8 @@ export const currencies = [
     {
         id: 10,
         value: "Canadian Dollar",
+    },  {
+        id: 11,
+        value: "Tunisian Dinar"
     },
 ]

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Banner from './components/banner/Banner';
+import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import HeroHeader from './components/hero-header/HeroHeader';
 import NewsLetter from './components/news-letter/NewsLetter';
@@ -37,6 +38,7 @@ function App() {
       <Pagination pages = {pages} currentPage = {currentPage} setCurrentPage = {setCurrentPage}/>
       <Banner />
       <NewsLetter />
+      <Footer />
     </div>
   );
 }
